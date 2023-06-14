@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Appointment Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Appointment Form</h1>
+
+  <form method="post" action="/">
+    <label for="alias">Alias:</label>
+    <input type="text" id="alias" name="alias" required><br><br>
+
+    <label for="phoneNumber">Phone Number:</label>
+    <input type="tel" id="phoneNumber" name="phoneNumber" required><br><br>
+
+    <label for="notification">Notification before Appointment:</label>
+    <select id="notification" name="notification" required>
+      <option value="">Select notification time in Minutes</option>
+      <option value="15">15</option>
+      <option value="30">30</option>
+      <option value="60">60</option>
+      <option value="1440">1 day</option>
+    </select><br><br>
+
+    <label for="issueType">Why do you need this service:</label>
+    <input type="text" id="issueType" name="issueType" required><br><br>
+
+    <label for="professionalType">Type of service required:</label>
+    <select id="professionalType" name="professionalType" required>
+      <option value="">Select professional type</option>
+      <option value="Psychologist">Psychologist</option>
+      <option value="Psychiatrist">Psychiatrist</option>
+      <option value="Counselor">Counselor</option>
+    </select><br><br>
+
+    <label for="time">Time:</label>
+    <input type="datetime-local" id="time" name="time" required><br><br>
+
+    <label for="timezone">Timezone:</label>
+    <input type="text" id="timezone" name="timezone" required><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+</body>
+</html>
